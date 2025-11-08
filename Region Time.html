@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Region Time</title>
+    </head>
+        <body>
+            <h1 style = "color: black;">Time:</h1>
+            <p style = "font-size: 2em; color: black;" id = "LocalTime"></p>
+            <script>
+                const UpdateTime = 1000;
+                function SetLocalTime()
+                    {
+                        document.getElementById("LocalTime").innerText = new Date().toLocaleString();
+                    }
+SetLocalTime()
+setInterval(SetLocalTime, UpdateTime)
+            </script>
+        </body>
+</html>
